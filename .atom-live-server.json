@@ -1,0 +1,7 @@
+// This is a file for atom-live-server. When you use "live server" automatically will open in the default browser. We use this hack to refresh the file in the browser that we want to use.
+
+
+// .atom-live-server.json
+{
+  browser: "Chrome"
+}
