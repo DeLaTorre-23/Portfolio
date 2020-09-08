@@ -1,4 +1,4 @@
-# portfolio-website-CF
-<delaTorre/>
+# Sergio's Portfolio <delaTorre/>
+
  
-This is my own Portfolio built with HTML and CSS.
+This is the Sergio's Portfolio built with HTML and CSS.
