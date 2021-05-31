@@ -374,10 +374,21 @@ animation-timing-function: linear;
 /* ########  Work.html / GRID ######## */
 
 .work-wrap {
-  width: 80%;
-  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flex-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 23px;
+  max-width: 1250px;
+}
+
+#work {
+  width: 90%;
+  margin-bottom: 30px;
 }
 
 /* start grid fallback */
