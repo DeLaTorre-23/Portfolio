@@ -423,67 +423,6 @@ animation-timing-function: linear;
 .img-project {
   width: 90%;
 }
-/* start grid fallback */
-/*.project-list__item {
-  display: inline-block;
-  width: 33%;
-  border-radius: 7px;
-}*/
-
-/* end grid fallback */
-/*
-@supports (display: grid) {
-  .project-list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 23px 1fr 23px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 23px;
-    margin: 0;
-  }
-
-  .project-list__item {
-    background-color: var(--background-primary-color);
-    width: auto;
-    min-height: auto;
-    margin: 0;
-  }
-
-  .project-list__item:last-child {
-    -ms-grid-column: 3;
-    grid-column: 3/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/3;
-  }
-}
-
-.project-list__item {
-  padding: 10px;
-}
-
-.project-list__item:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.project-list__item h3 {
-  padding-bottom: 15px;
-}
-
-.project-list__item p {
-  padding-bottom: 15px;
-}
-*/
 
 /* ########  Contact.html ######## */
 
