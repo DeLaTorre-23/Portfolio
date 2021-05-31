@@ -1,4 +1,3 @@
-
 /* ######## VARIABLES ######## */
 
 /* ######## GENERAL STYLES ######## */
@@ -11,13 +10,13 @@
 }
 
 body {
-  --primary-color: #4169E1;
-  --secondary-color: #6A5ACD;
+  --primary-color: #4169e1;
+  --secondary-color: #6a5acd;
   --terciary-color: #05676e;
   --dark-color: #000;
   --text-primary-color: #191970;
-  --text-secondary-color: #FFFAFA;
-  --background-primary-color: #E6EEF0;
+  --text-secondary-color: #fffafa;
+  --background-primary-color: #e6eef0;
   --border-primary-color: lavender;
   --sun1-color: #edc655;
   --sun2-color: #fcffad;
@@ -28,17 +27,17 @@ body {
 
   /* <a href="http://www.freepik.com">Background Designed by kjpargeter / Freepik</a> */
   background-image: url("../img/3.jpg");
-  font-family: 'BioRhyme', sans-serif, helvetica;
-  font-weight: var(--main-font-wght);
+  font-family: "BioRhyme", sans-serif, helvetica;
+  font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
-  line-height: 1.6;
+  /*line-height: 1.6;*/
   letter-spacing: 1px;
   color: var(--text-primary-color);
 }
 
 .main-wrap {
-  width: 80%;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 150px;
 }
 
 .clearfix {
@@ -52,13 +51,14 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
+  padding-top: px;
   align-items: center;
 }
 
 .page-header__item {
   flex: 0 1 200px;
-  width: 33%;
+  width: 57%;
 }
 
 .page-header__item:first-child {
@@ -89,11 +89,51 @@ body {
 
 .profile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 100px;
-  max-width: 1000px;
+  margin-top: 23px;
+  max-width: 1250px;
+}
+.hello-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.hello-container h1 {
+  font-size: 80px;
+}
+.hello-title {
+  justify-content: flex-start;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  padding-left: 100px;
+}
+
+.link-git-profile {
+  margin-top: 40px;
+  text-align: center;
+  width: 66%;
+}
+.animation-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.hi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .profile-portrait {
@@ -102,28 +142,10 @@ body {
   border-radius: 50%;
 }
 
-.profile__item {
-  flex: 0 1 350px;
-}
-
-.profile__item:last-child {
-  flex-grow: 1;
-  text-align: center;
-  width: 66%;
-}
-
-.profile__item h1 {
-  margin-bottom: 30px;
-}
-
-.profile__item p {
-  margin-bottom: 23px;
-}
-
 h1 {
-  font-family: 'BioRhyme', sans-serif, helvetica;
+  font-family: "BioRhyme", sans-serif, helvetica;
   font-size: 35px;
-  font-weight: var(--tittle-font-wght);
+  font-weight: var(--tittle-font-weight);
 }
 
 h2 {
@@ -214,9 +236,12 @@ button:active,
 }
 
 .animation-skyline {
+  display: flex;
+  justify-content: center;
   text-align: center;
   position: relative;
   z-index: 0;
+  width: 85%;
 }
 
 svg {
@@ -299,7 +324,7 @@ animation-timing-function: linear;
 
 /* end grid fallback */
 
-@supports (display:grid) {
+@supports (display: grid) {
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
