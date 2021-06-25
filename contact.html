@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sergio De La Torre - Portfolio</title>
-    <link rel="shortcut icon" href="img/fav_eye_fav.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/fav_eye_fav.png" type="image/x-icon" />
     <!--<link rel="stylesheet" href="css/Normalize.css" />
     <link rel="stylesheet" href="css/styles.production.css" type="text/css" />-->
     <link
@@ -16,24 +16,21 @@
   </head>
   <body>
     <!-- ########## HEADER ########## -->
-    <header class="page-header">
+    <header class="main-header">
       <!-- This is my logo -->
-      <a href="https://github.com/DeLaTorre-23" target="_blank">
-        <img
-          class="page-header__item"
-          src="img/fav_eye_log_dwlav.png"
-          alt="logo of an eye, Sergio De La Torre Brand"
-        />
-      </a>
+      <h1>
+        <a  title=" Sergio De La Torre - FullStack Developer" href="/">
+          <img
+            class="img-header"
+            src="assets/img/fav_eye_log_dwlav.png"
+            alt="logo of an eye, Sergio De La Torre - FullStack Developer"
+          />
+        </a>
+      </h1>
 
-      <!-- ##### Main Nav ##### -->
-      <nav class="main-navigation page-header__item">
+      <!-- ##### Main Nav Header ##### -->
+      <nav class="main-nav-header">
         <ul class="navigation-list" role="menubar">
-          <li role="presentation">
-            <a class="navigation-list__item" href="index.html" role="menuitem"
-              >Home</a
-            >
-          </li>
           <li role="presentation">
             <a class="navigation-list__item" href="work.html" role="menuitem"
               >Work</a
@@ -54,6 +51,33 @@
           </li>
         </ul>
       </nav>
+
+      <ul class="social-media-header">
+        <!-- Github logo -->
+        <li>
+          <a href="https://github.com/DeLaTorre-23" target="_blank">
+            <img
+              id="github_icon"
+              width="27"
+              height="27"
+              src="assets/img/github_icon.svg"
+              alt="Github icon"
+            />
+          </a>
+        </li>
+        <!-- LinkedIn logo -->
+        <li>
+          <a href="https://www.linkedin.com/in/delatorreortega/?locale=en_US" target="_blank">
+            <img
+              id="linkedin_icon"
+              width="23"
+              height="23"
+              src="assets/img/linkedin_icon.svg"
+              alt="Linkedin icon"
+            />
+          </a>
+        </li>
+      </ul>
       <!-- End of Main Nav -->
     </header>
     <!-- End of Header -->
@@ -61,12 +85,10 @@
     <!-- ########## MAIN WRAP CONTACT ########## -->
     <div class="main-wrap">
       <div class="contact-wrap">
-        <div id="contact">
-          <h1>Contact</h1>
-        </div>
+       
         <!-- ##### Info ##### -->
         <div class="info">
-          <h2>To: Sergio De La Torre</h2>
+          <h4>To: Sergio De La Torre</h4>
 
           <!-- <p>
             <a href="mailto:eyecontact@delatorre.com">Contact me</a>
@@ -103,7 +125,7 @@
             <div class="clearfix"></div>
 
             <button class="button-contact-me" type="submit" name="submit">
-              Send message
+              Send a message
             </button>
           </form>
           <!-- End of Form -->
@@ -114,31 +136,10 @@
     </div>
     <!-- End of Main Wrap -->
 
-    <!-- ########## FOOTER ########## -->
+    <!-- ########## MAIN FOOTER ########## -->
     <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <!-- Github logo -->
-        <a href="https://github.com/DeLaTorre-23" target="_blank">
-          <img
-            id="github_icon"
-            width="30"
-            height="30"
-            src="img/github_icon.svg"
-            alt="github icon"
-          />
-        </a>
-        <!-- LinkedIn logo -->
-        <a href="https://linkedin.com" target="_blank">
-          <img
-            id="linkedin_icon"
-            width="30"
-            height="30"
-            src="img/linkedin_icon.svg"
-            alt="linkedin icon"
-          />
-        </a>
-      </div>
+      <p>© Copyright 2021</p>
+      <p>Designed and developed by Sergio De La Torre</p>
     </footer>
     <!-- End of Footer -->
 

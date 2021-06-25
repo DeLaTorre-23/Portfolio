@@ -17,29 +17,23 @@
   </head>
   <body>
     <!-- ########## HEADER ########## -->
-    <header class="page-header">
+    <header class="main-header">
       <!-- This is my logo -->
-      <a href="https://github.com/DeLaTorre-23" target="_blank">
-        <img
-          class="page-header__item"
-          src="img/fav_eye_log_dwlav.png"
-          alt="logo of an eye, Sergio De La Torre Brand"
-        />
-      </a>
+      <h1>
+        <a  title=" Sergio De La Torre - FullStack Developer" href="/">
+          <img
+            class="img-header"
+            src="assets/img/fav_eye_log_dwlav.png"
+            alt="logo of an eye, Sergio De La Torre - FullStack Developer"
+          />
+        </a>
+      </h1>
 
-      <!-- ##### Main Nav ##### -->
-      <nav class="main-navigation page-header__item">
+      <!-- ##### Main Nav Header ##### -->
+      <nav class="main-nav-header">
         <ul class="navigation-list" role="menubar">
           <li role="presentation">
-            <a class="navigation-list__item" href="index.html" role="menuitem"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              class="navigation-list__item navigation-list__item--active"
-              href="work.html"
-              role="menuitem"
+            <a class="navigation-list__item navigation-list__item--active" href="work.html" role="menuitem"
               >Work</a
             >
           </li>
@@ -49,21 +43,48 @@
             >
           </li>
           <li role="presentation">
-            <a class="navigation-list__item" href="contact.html" role="menuitem"
+            <a
+              class="navigation-list__item"
+              href="contact.html"
+              role="menuitem"
               >Contact</a
             >
           </li>
         </ul>
       </nav>
+
+      <ul class="social-media-header">
+        <!-- Github logo -->
+        <li>
+          <a href="https://github.com/DeLaTorre-23" target="_blank">
+            <img
+              id="github_icon"
+              width="27"
+              height="27"
+              src="assets/img/github_icon.svg"
+              alt="Github icon"
+            />
+          </a>
+        </li>
+        <!-- LinkedIn logo -->
+        <li>
+          <a href="https://www.linkedin.com/in/delatorreortega/?locale=en_US" target="_blank">
+            <img
+              id="linkedin_icon"
+              width="23"
+              height="23"
+              src="assets/img/linkedin_icon.svg"
+              alt="Linkedin icon"
+            />
+          </a>
+        </li>
+      </ul>
       <!-- End of Main Nav -->
     </header>
     <!-- End of Header -->
 
     <!-- ########## MAIN WRAP ########## -->
     <div class="work-wrap">
-      <div id="work">
-        <h1>Work</h1>
-      </div>
       <!-- ##### Work List ##### -->
       <section class="projects">
         <div class="project-container">
@@ -99,7 +120,7 @@
             >
               <img
                 class="img-project"
-                src="./img/Documentality-Angular-client.png"
+                src="./assets/img/Documentality-Angular-client.png"
               />
             </a>
           </div>
@@ -127,7 +148,7 @@
 
           <div class="project-wrapper__image">
             <a href="https://github.com/DeLaTorre-23/movie_api" target="_blank">
-              <img class="img-project" src="./img/DocumentalityAPI.png" />
+              <img class="img-project" src="./assets/img/DocumentalityAPI.png" />
             </a>
           </div>
         </div>
@@ -164,7 +185,7 @@
 
           <div class="project-wrapper__image">
             <a href="#!" target="_blank">
-              <img class="img-project" src="./assets/project.jpg" />
+              <img class="img-project" src="./assets/img/project.jpg" />
             </a>
           </div>
         </div>
@@ -202,7 +223,7 @@
               href="https://github.com/DeLaTorre-23/simple-js-app_Pokedex"
               target="_blank"
             >
-              <img class="img-project" src="./img/Pokédex.png" />
+              <img class="img-project" src="./assets/img/Pokédex.png" />
             </a>
           </div>
         </div>
@@ -232,7 +253,7 @@
               href="https://github.com/DeLaTorre-23/connect-mobile-app"
               target="_blank"
             >
-              <img class="img-project" src="./img/Connect-App.png" />
+              <img class="img-project" src="./assets/img/Connect-App.png" />
             </a>
           </div>
         </div>
@@ -243,29 +264,8 @@
 
     <!-- ########## MAIN FOOTER ########## -->
     <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <!-- Github logo -->
-        <a href="https://github.com/DeLaTorre-23" target="_blank">
-          <img
-            id="github_icon"
-            width="30"
-            height="30"
-            src="img/github_icon.svg"
-            alt="github icon"
-          />
-        </a>
-        <!-- LinkedIn logo -->
-        <a href="https://linkedin.com" target="_blank">
-          <img
-            id="linkedin_icon"
-            width="30"
-            height="30"
-            src="img/linkedin_icon.svg"
-            alt="linkedin icon"
-          />
-        </a>
-      </div>
+      <p>© Copyright 2021</p>
+      <p>Designed and developed by Sergio De La Torre</p>
     </footer>
     <!-- End of Footer -->
 
