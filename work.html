@@ -1,117 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><delaTorre/> - Portfolio</title>
-	<link rel="shortcut icon" href="img/fav_eye_fav.png" type="image/x-icon"/>
-	<link rel="stylesheet" href="css/Normalize.css">
-	<link rel="stylesheet" href="css/styles.production.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
-	<!-- <a href="http://www.freepik.com">Background Designed by kjpargeter / Freepik</a> -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sergio De La Torre - Portfolio</title>
+    <link rel="shortcut icon" href="img/fav_eye_fav.png" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="css/Normalize.css" />
+    <link rel="stylesheet" href="css/styles.production.css" type="text/css" />-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-	<!-- ########## HEADER ########## -->
-	<header class="page-header">
-		<!-- This is my logo -->
-		<img class="page-header__item" src="img/fav_eye_log_dwlav.png" alt="logo of an eye, Sergio De La Torre Brand">
+    <!-- <link href="http://www.freepik.com">Background Designed by kjpargeter / Freepik</link>  -->
+  </head>
+  <body>
+    <!-- ########## HEADER ########## -->
+    <header class="main-header">
+      <!-- This is my logo -->
+      <h1>
+        <a title=" Sergio De La Torre - FullStack Developer" href="/">
+          <img
+            class="img-header"
+            src="assets/img/fav_eye_log_dwlav.png"
+            alt="logo of an eye, Sergio De La Torre - FullStack Developer"
+          />
+        </a>
+      </h1>
 
-		<!-- ##### Main Nav ##### -->
-		<nav class="main-navigation page-header__item">
-			<ul class="navigation-list" role="menubar">
-				<li role="presentation">
-					<a class="navigation-list__item" href="about.html" role="menuitem">About Me</a>
-				</li>
-				<li role="presentation">
-					<a class="navigation-list__item navigation-list__item--active" href="work.html" role="menuitem">Work</a>
-				</li>
-				<li role="presentation">
-					<a class="navigation-list__item" href="index.html" role="menuitem">Home</a>
-				</li>
-				<li role="presentation">
-					<a class="navigation-list__item" href="contact.html" role="menuitem">Contact</a>
-				</li>
-			</ul>
-		</nav><!-- End of Main Nav -->
-	</header><!-- End of Header -->
+      <!-- ##### Main Nav Header ##### -->
+      <nav class="main-nav-header">
+        <ul class="navigation-list" role="menubar">
+          <li role="presentation">
+            <a
+              class="navigation-list__item navigation-list__item--active"
+              href="work.html"
+              role="menuitem"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" href="about.html" role="menuitem"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a class="navigation-list__item" href="contact.html" role="menuitem"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-	<!-- ########## MAIN WRAP ########## -->
-  <div class="main-wrap">
+      <ul class="social-media-header">
+        <!-- Github logo -->
+        <li>
+          <a href="https://github.com/DeLaTorre-23" target="_blank">
+            <img
+              id="github_icon"
+              width="27"
+              height="27"
+              src="assets/img/github_icon.svg"
+              alt="Github icon"
+            />
+          </a>
+        </li>
+        <!-- LinkedIn logo -->
+        <li>
+          <a
+            href="https://www.linkedin.com/in/delatorreortega/?locale=en_US"
+            target="_blank"
+          >
+            <img
+              id="linkedin_icon"
+              width="23"
+              height="23"
+              src="assets/img/linkedin_icon.svg"
+              alt="Linkedin icon"
+            />
+          </a>
+        </li>
+      </ul>
+      <!-- End of Main Nav -->
+    </header>
+    <!-- End of Header -->
 
-		<!-- ##### Work List ##### -->
-		<section>
-	    <h1>Work</h1>
-			<div class="project-list">
-				<!-- Grid items will live here -->
-				<div class="project-list__item">
-					<h3>Styleguide for portfolio page</h3>
-					<p>
-						Here you can find a Photografer Portfolio written in React.js. Additionally I've created the HTML and CSS templates.
-					</p>
-					<a href="https://github.com" target="_blank">See "Marta Martin" on GitHub</a>
-				</div>
+    <!-- ########## MAIN WRAP ########## -->
+    <div class="work-wrap">
+      <!-- ##### Work List ##### -->
+      <section class="projects">
+        <div class="project-container">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">
+              Documentality Angular App
+            </h3>
+            <div>
+              <p class="text-project">
+                This application is build in a single-page using Angular that is
+                connected to the Documentality backend. Users are able to create
+                an account and browse their favorite documentaries. They can
+                modify account information, add or remove documentaries from
+                their list of favorites, or delete their account.
+              </p>
+            </div>
+            <!-- 
+            <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+              #See Live
+            </a> 
+            -->
+            <a
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/DeLaTorre-23/documentality-Angular-client"
+            >
+              Source Code
+            </a>
+          </div>
 
-				<div class="project-list__item">
-					<h3>Node.js Server</h3>
-					<p>
-						A typical hospitality busisness. I was responsible for the frontend and Backend. It’s written in React.js too. Additionally I've created with Node.js a section of costumers reviews.
-					</p>
-					<a href="https://github.com" target="_blank">See "The Cardamon Pod" on GitHub</a>
-				</div>
+          <div class="project-wrapper__image">
+            <a
+              href="https://github.com/DeLaTorre-23/documentality-Angular-client"
+              target="_blank"
+            >
+              <img
+                class="img-project"
+                src="./assets/img/Documentality-Angular-client.png"
+              />
+            </a>
+          </div>
+        </div>
 
-				<div class="project-list__item">
-					<h3>Native App</h3>
-					<p>
-						Focusing on the Backend and a framework for the Frondend, I've made this native webpage car sales business. I was responsible to create a server with Node.js.
-					</p>
-					<a href="https://github.com" target="_blank">See "Kaizen Automotive" on GitHub</a>
-				</div>
+        <div class="project-container">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Documentality API</h3>
+            <div>
+              <p class="text-project">
+                Movie_api is the server-side of “documentality project”. Users
+                will be able to sign up, update their personal information, and
+                create a list of their favorite Documentaries.
+              </p>
+            </div>
 
-				<div class="project-list__item">
-					<h3>JavaScript</h3>
-					<p>
-						A typical hair dresser webpage. It’s written in JavaScript. Additionally, I've created the HTML and CSS templates.
-					</p>
-					<a href="https://github.com" target="_blank">See "Scissor's Hands" on GitHub</a>
-				</div>
+            <a
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/DeLaTorre-23/movie_api"
+            >
+              Source Code
+            </a>
+          </div>
 
-				<div class="project-list__item">
-					<h3>Geolocation</h3>
-					<p>
-						In this project, I was responsible for the frontend and Backend. It’s written in JavaScript. Additionally, I've created a geolocation service.
-					</p>
-					<a href="https://github.com" target="_blank">See "Come to Walk" on GitHub</a>
-				</div>
+          <div class="project-wrapper__image">
+            <a href="https://github.com/DeLaTorre-23/movie_api" target="_blank">
+              <img
+                class="img-project"
+                src="./assets/img/DocumentalityAPI.png"
+              />
+            </a>
+          </div>
+        </div>
+        <!--
+        <div class="project-container">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Documentality React App</h3>
+            <div>
+              <p class="text-project">
+                Documentality is an React application that allows users to get
+                information about movies, genres, and directors. Users are able
+                to create an account and browse their favorite documentaries.
+                They can modify account information, add or remove documentaries
+                from their favorite list, or delete their account. This
+                application uses my existing server-side REST API and MongoDB
+                database.
+              </p>
+            </div>
+            <a
+              target="_blank"
+              class="cta-btn cta-btn--hero"
+              href="https://github.com/DeLaTorre-23/Documentality-Client"
+            >
+              See Live
+            </a>
+            <a
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/DeLaTorre-23/Documentality-Client"
+            >
+              Source Code
+            </a>
+          </div>
+       
+          <div class="project-wrapper__image">
+            <a href="#!" target="_blank">
+              <img class="img-project" src="./assets/img/project.jpg" />
+            </a>
+          </div>
+        </div>
+ -->
+        <div class="project-container">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Pokédex App</h3>
+            <div>
+              <p class="text-project">
+                This web application built in HTML, CSS, JavaScript, Jquery and
+                Bootstrap that loads data from an external API and display a
+                Modal windows enabling the viewing in detail for; Type, Height,
+                weight and Abilities in that Pokémon. The API used for this
+                project is the Pokémon API.
+              </p>
+            </div>
+            <!--
+            <a
+              target="_blank"
+              class="cta-btn cta-btn--hero"
+              href="https://delatorre-23.github.io/simple-js-app_Pokedex/"
+            >
+              See Live
+            </a>
+          -->
+            <a
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/DeLaTorre-23/simple-js-app_Pokedex"
+            >
+              Source Code
+            </a>
+          </div>
 
-				<div class="project-list__item">
-					<h3>Your project?</h3>
-					<p>
-						I can help in realizing front-end and back-end projects with the following technologies: React.js, JavaScript, wordpress, Node.js, HTML and CSS. I am also happy to learn other technologies if needed.
-					</p>
-					<a href="https://github.com" target="_blank">Contact me</a>
-				</div>
-			</div>
-		</section><!-- End of Work List -->
-  </div><!-- End of Main Wrap -->
+          <div class="project-wrapper__image">
+            <a
+              href="https://github.com/DeLaTorre-23/simple-js-app_Pokedex"
+              target="_blank"
+            >
+              <img class="img-project" src="./assets/img/Pokédex.png" />
+            </a>
+          </div>
+        </div>
 
+        <div class="project-container">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Connect App</h3>
+            <div>
+              <p class="text-project">
+                This is a native app for mobile devices built with React nd Expo
+                that stores data with Google Firebase. It allows users to chat
+                and share their images and locations.
+              </p>
+            </div>
 
-  <!-- ########## MAIN FOOTER ########## -->
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-			<!-- Github logo -->
-			<a href="https://github.com" target="_blank">
-				<img id="github_icon" width="30" height="30" src="img/github_icon.svg" alt="github icon">
-			</a>
-		  <!-- LinkedIn logo -->
-		  <a href="https://linkedin.com" target="_blank">
-				<img id="linkedin_icon" width="30" height="30" src="img/linkedin_icon.svg" alt="linkedin icon">
-		  </a>
-		</div>
-  </footer><!-- End of Footer -->
+            <a
+              target="_blank"
+              class="cta-btn text-color-main"
+              href="https://github.com/DeLaTorre-23/connect-mobile-app"
+            >
+              Source Code
+            </a>
+          </div>
 
-	<!-- ######### SCRIPT ########## -->
-	<script src="js/tota11y.min.js"></script>
-	<!-- End of Script -->
-</body>
+          <div class="project-wrapper__image">
+            <a
+              href="https://github.com/DeLaTorre-23/connect-mobile-app"
+              target="_blank"
+            >
+              <img class="img-project" src="./assets/img/Connect-App.png" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End of Work List -->
+    </div>
+    <!-- End of Main Wrap -->
+
+    <!-- ########## MAIN FOOTER ########## -->
+    <footer class="page-footer">
+      <p>© Copyright 2021</p>
+      <p>Designed and developed by Sergio De La Torre</p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- ######### SCRIPT ########## -->
+    <script src="js/tota11y.min.js"></script>
+    <!-- End of Script -->
+  </body>
 </html>
