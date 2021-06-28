@@ -65,7 +65,7 @@ body {
   -ms-flex-align: center;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(230,230,250,0.5);
+  background-color: rgba(230, 230, 250, 0.5);
   border: 3px solid lavender;
   box-shadow: 0.8em 0.8em 0.5em lavender;
   border-radius: 23px;
@@ -75,7 +75,7 @@ body {
 .img-header {
   width: 60%;
   height: 60%;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   transform: scale(1);
 }
 
@@ -89,8 +89,8 @@ body {
 /* ##### MAIN NAV HEADER ##### */
 
 .main-nav-header {
-  margin:0 15% 0 0;
-  background-color: rgba(230,230,250,0.1);
+  margin: 0 15% 0 0;
+  background-color: rgba(230, 230, 250, 0.1);
 }
 
 .navigation-list {
@@ -110,7 +110,6 @@ body {
 .navigation-list__item--active {
   text-decoration: underline;
 }
-
 
 /* ######## MAIN WRAP ######## */
 
@@ -141,7 +140,7 @@ body {
 
 .hello-container h4 {
   font-size: 80px;
-  text-shadow: 0.08em 0.08em 0.08em  rgba(25, 25, 112, 0.3);
+  text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
 }
 
 .hello-title {
@@ -160,6 +159,7 @@ body {
 
 #intro-span {
   font-style: italic;
+  font-weight: bold;
   font-size: 20px;
 }
 
@@ -173,7 +173,7 @@ body {
 .animation-container {
   display: flex;
   justify-content: center;
- 
+
   position: relative;
   top: -60px;
 }
@@ -361,7 +361,7 @@ animation-timing-function: linear;
 .profile-portrait {
   width: 90%;
   border-radius: 23%;
-  box-shadow: 0.8em 0.8em 0.8em  rgba(25, 25, 112, 0.3);
+  box-shadow: 0.8em 0.8em 0.8em rgba(25, 25, 112, 0.3);
 }
 
 .about-introduction {
@@ -443,18 +443,17 @@ animation-timing-function: linear;
 .project-wrapper__text-title {
   margin-bottom: 10px;
   font-size: x-large;
-  text-shadow: 0.08em 0.08em 0.08em  rgba(25, 25, 112, 0.3);
+  text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
 }
 
 .project-wrapper__image {
   width: 70%;
   padding: 15px;
-  
 }
 
 .img-project {
   width: 90%;
-  box-shadow: 0.8em 0.8em 0.8em  rgba(25, 25, 112, 0.3);
+  box-shadow: 0.8em 0.8em 0.8em rgba(25, 25, 112, 0.3);
 }
 
 /* ########  Contact.html ######## */
@@ -483,7 +482,7 @@ animation-timing-function: linear;
 }
 
 .info h4 {
-  text-shadow: 0.08em 0.08em 0.08em  rgba(25, 25, 112, 0.3);
+  text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
 }
 
 #link-contact {
@@ -519,6 +518,7 @@ animation-timing-function: linear;
   border: 3px solid var(--border-primary-color);
   box-shadow: -1px solid var(--dark-color);
   width: 500px;
+  height: 32px;
 }
 
 #contact-form textarea {
