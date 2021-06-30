@@ -31,6 +31,7 @@ body {
 
   /* <a href="http://www.freepik.com">Background Designed by kjpargeter / Freepik</a> */
   background-image: url("../assets/img/3.jpg");
+  /* background-color: rgb(242, 242, 242);*/
   font-family: "BioRhyme", sans-serif, helvetica;
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
@@ -65,9 +66,9 @@ body {
   -ms-flex-align: center;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(230, 230, 250, 0.5);
-  border: 3px solid lavender;
-  box-shadow: 0.8em 0.8em 0.5em lavender;
+  background-color: rgba(79, 129, 189, 0.8);
+  border: 3px solid rgba(25, 25, 112, 0.2);
+  box-shadow: 0.5em 0.5em 0.7em rgba(79, 129, 189, 0.5);
   border-radius: 23px;
   margin-bottom: 50px;
 }
@@ -98,6 +99,8 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  background-color: rgba(79, 129, 189, 0.3);
 }
 
 .navigation-list li {
@@ -105,6 +108,10 @@ body {
   margin-left: 15px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.navigation-list__item {
+  color: rgb(242, 242, 242);
 }
 
 .navigation-list__item--active {
@@ -140,6 +147,7 @@ body {
 
 .hello-container h4 {
   font-size: 80px;
+  color: #4169e1;
   text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
 }
 
@@ -155,11 +163,13 @@ body {
   font-size: 18px;
   padding: 50px;
   padding-left: 100px;
+  color: #4169e1;
 }
 
 #intro-span {
   font-style: italic;
   font-size: 20px;
+  color: rgba(25, 25, 112, 0.9);
 }
 
 .link-git-profile {
@@ -167,6 +177,11 @@ body {
   font-size: 15px;
   text-align: center;
   /*width: 66%;*/
+}
+
+.link-git-profile:hover {
+  color: rgba(25, 25, 112, 0.9);
+  transition: all 0.3s;
 }
 
 .animation-container {
@@ -209,28 +224,35 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+  color: rgba(25, 25, 112, 0.6);
+  transition: all 0.5s;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
-
+/*
 a:visited {
-  color: var(--secondary-color);
+  color: white;
 }
 
 a:active {
   color: var(--terciary-color);
 }
+*/
 
 button,
 .button-cv {
   margin: 10px;
   padding: 10px;
-  background-color: var(--secondary-color);
-  color: var(--text-secondary-color);
+  background-color: 4px solid rgb(79, 129, 189);
+  color: rgb(79, 129, 189);
   text-decoration: none;
   font-family: inherit;
   letter-spacing: 2px;
   border-radius: 7px;
-  border: 3px solid var(--text-primary-color);
-  border-bottom: 3px solid rgba(25, 25, 112, 0.3);
+  font-weight: bold;
+  border: 3px solid rgb(79, 129, 189);
+  transition: all 0.5s;
 }
 
 button:hover,
@@ -241,15 +263,17 @@ button:focus,
   -webkit-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
-  opacity: 0.8;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: white;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 button:active,
 .button-cv:active {
-  color: var(--dark-color);
+  color: rgb(79, 129, 189);
 }
 
 /* ########  SVG ########*/
@@ -360,7 +384,7 @@ animation-timing-function: linear;
 .profile-portrait {
   width: 90%;
   border-radius: 23%;
-  box-shadow: 0.8em 0.8em 0.8em rgba(25, 25, 112, 0.3);
+  box-shadow: 0.5em 0.5em 0.5em rgba(79, 129, 189, 0.5);
 }
 
 .about-introduction {
@@ -369,11 +393,16 @@ animation-timing-function: linear;
   width: 80%;
 }
 
+.text-container {
+  color: var(--primary-color);
+}
+
 .skills-table {
   width: 550px;
   padding: 5px;
   margin-top: 40px;
-  border: 4px solid var(--border-primary-color);
+  color: var(--primary-color);
+  border: 4px solid rgb(79, 129, 189);
   border-radius: 7px;
   text-align: center;
   margin-bottom: 30px;
@@ -381,6 +410,7 @@ animation-timing-function: linear;
 
 .skills-table th {
   padding: 10px 15px;
+  color: rgba(25, 25, 112, 0.8);
 }
 
 .wrap-button {
@@ -399,10 +429,14 @@ animation-timing-function: linear;
   width: 500px;
   margin-bottom: 30px;
   z-index: 2;
+  color: white;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
+/*
 .button-cv:visited {
   color: white;
-}
+}*/
 
 /* ########  Work.html / GRID ######## */
 
@@ -437,12 +471,27 @@ animation-timing-function: linear;
 
 .text-project {
   margin-bottom: 15px;
+  color: var(--primary-color);
 }
 
 .project-wrapper__text-title {
   margin-bottom: 10px;
   font-size: x-large;
   text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
+  color: rgba(25, 25, 112, 0.8);
+}
+
+.cta-btn {
+  border: 2px solid rgba(25, 25, 112, 0.8);
+  color: rgba(25, 25, 112, 0.8);
+  transition: all 0.5s;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  color: white;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .project-wrapper__image {
@@ -478,6 +527,8 @@ animation-timing-function: linear;
   font-weight: var(--main-font-weight);
   margin-top: 23px;
   margin-bottom: 50px;
+  text-shadow: 0.08em 0.08em 0.08em rgba(25, 25, 112, 0.3);
+  color: rgba(25, 25, 112, 0.8);
 }
 
 .info h4 {
@@ -487,6 +538,7 @@ animation-timing-function: linear;
 #link-contact {
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
 #link-contact p {
@@ -514,14 +566,14 @@ animation-timing-function: linear;
 }
 
 #contact-form input {
-  border: 3px solid var(--border-primary-color);
+  border: 3px solid rgba(79, 129, 789, 0.6);
   box-shadow: -1px solid var(--dark-color);
   width: 500px;
   height: 32px;
 }
 
 #contact-form textarea {
-  border: 4px solid lavender;
+  border: 3px solid rgba(79, 129, 789, 0.6);
   -webkit-box-shadow: -1px solid #000;
   box-shadow: -1px solid #000;
   width: 500px;
@@ -535,6 +587,9 @@ animation-timing-function: linear;
   margin-left: 12px;
   width: 480px;
   padding: 5px;
+  color: white;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 /* ######## FOOTER ######## */
@@ -552,7 +607,7 @@ animation-timing-function: linear;
   margin-bottom: 15px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #6a5acd;
+  color: #4169e1;
 }
 
 .page-footer p {
