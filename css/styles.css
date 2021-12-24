@@ -187,15 +187,8 @@ body {
 .animation-container {
   display: flex;
   justify-content: center;
-
-  position: relative;
-  top: -60px;
-}
-
-.hi-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin-bottom: -76px;
+  margin-top: 22px;
 }
 
 h1 {
