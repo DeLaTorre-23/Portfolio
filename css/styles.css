@@ -1,19 +1,5 @@
 /* ######## VARIABLES ######## */
-
-/* ######## GENERAL STYLES ######## */
-
 * {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  list-style-type: none;
-  vertical-align: baseline;
-}
-
-body {
   --primary-color: #4169e1;
   --secondary-color: #6a5acd;
   --terciary-color: #05676e;
@@ -27,9 +13,22 @@ body {
   --sun3-color: #f76414;
   --main-font-weight: 500;
   --tittle-font-weight: 700;
-  --main-font-size: 16px;
+  --main-font-size: 1em;
+}
 
-  /* <a href="http://www.freepik.com">Background Designed by kjpargeter / Freepik</a> */
+/* ######## GENERAL STYLES ######## */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
   background-image: url("../assets/img/3.jpg");
   /* background-color: rgb(242, 242, 242);*/
   font-family: "BioRhyme", sans-serif, helvetica;
@@ -41,6 +40,7 @@ body {
 
 .main-wrap {
   width: 100%;
+  margin-top: 55px;
   margin-bottom: 20px;
 }
 
@@ -188,7 +188,7 @@ body {
 .animation-container {
   display: flex;
   justify-content: center;
-  margin-bottom: -87px;
+  margin-bottom: -67px;
   margin-top: -88px;
 }
 
@@ -510,8 +510,8 @@ animation-timing-function: linear;
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 35px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   max-width: 1250px;
 }
 
